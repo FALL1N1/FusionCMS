@@ -1,0 +1,9 @@
+{
+	"name": "Error handler",
+	"description": "Displays permission-related errors and 404",
+	"author": {
+		"name": "FusionCMS",
+		"website": "http:\/\/raxezdev.com\/fusioncms"
+	},
+	"enabled": true
+}

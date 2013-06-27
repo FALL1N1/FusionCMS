@@ -1,0 +1,11 @@
+{
+	"name": "Sidebox: custom",
+	"description": "Allows you to create sideboxes with custom text",
+
+	"author": {
+		"name": "FusionCMS",
+		"website": "http://raxezdev.com/fusioncms"
+	},
+	
+	"enabled": true
+}
