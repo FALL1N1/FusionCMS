@@ -121,7 +121,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *  Is there a "pre_system" hook?
  * ------------------------------------------------------
  */
-	$EXT->call_hook('pre_system');
+	$EXT->_call_hook('pre_system');
 
 /*
  * ------------------------------------------------------
@@ -185,7 +185,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *	Is there a valid cache file? If so, we're done...
  * ------------------------------------------------------
  */
-	if ($EXT->call_hook('cache_override') === FALSE
+	if ($EXT->_call_hook('cache_override') === FALSE
 		&& $OUT->_display_cache($CFG, $URI) === TRUE)
 	{
 		exit;
@@ -329,7 +329,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *  Is there a "pre_controller" hook?
  * ------------------------------------------------------
  */
-	$EXT->call_hook('pre_controller');
+	$EXT->_call_hook('pre_controller');
 
 /*
  * ------------------------------------------------------
@@ -346,7 +346,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *  Is there a "post_controller_constructor" hook?
  * ------------------------------------------------------
  */
-	$EXT->call_hook('post_controller_constructor');
+	$EXT->_call_hook('post_controller_constructor');
 
 /*
  * ------------------------------------------------------
@@ -363,14 +363,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *  Is there a "post_controller" hook?
  * ------------------------------------------------------
  */
-	$EXT->call_hook('post_controller');
+	$EXT->_call_hook('post_controller');
 
 /*
  * ------------------------------------------------------
  *  Send the final rendered output to the browser
  * ------------------------------------------------------
  */
-	if ($EXT->call_hook('display_override') === FALSE)
+	if ($EXT->_call_hook('display_override') === FALSE)
 	{
 		$OUT->_display();
 	}
@@ -380,7 +380,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *  Is there a "post_system" hook?
  * ------------------------------------------------------
  */
-	$EXT->call_hook('post_system');
+	$EXT->_call_hook('post_system');
 
 /* End of file CodeIgniter.php */
 /* Location: ./system/core/CodeIgniter.php */
