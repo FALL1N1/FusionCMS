@@ -109,6 +109,7 @@ class Admin_items extends MX_Controller
 		$data["quality"] = $this->input->post("quality");
 		$data["query_database"] = $this->input->post("query_database");
 		$data["query_need_character"] = ($this->input->post("query_need_character") == "true") ? 1 : 0;
+		$data["require_character_offline"] = ($this->input->post("require_character_offline") == "true") ? 1 : 0;
 		$data["query"] = $this->input->post("query");
 		$data["realm"] = $this->input->post("realm");
 		$data["group"] = $this->input->post("group");
@@ -133,6 +134,7 @@ class Admin_items extends MX_Controller
 		$data["description"] = $this->input->post("description");
 		$data["quality"] = $this->input->post("quality");
 		$data["command_need_character"] = ($this->input->post("command_need_character") == "true") ? 1 : 0;
+		$data["require_character_offline"] = ($this->input->post("require_character_offline") == "true") ? 1 : 0;
 		$data["command"] = $this->input->post("command");
 		$data["realm"] = $this->input->post("realm");
 		$data["group"] = $this->input->post("group");
